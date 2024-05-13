@@ -8,12 +8,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", 
-                   "https://web-dev-to-do-list-database-practice.vercel.app",
-                   "http://175.158.46.205:1025/"], 
+    allow_origins=["*"],  
     allow_credentials=True,
-    allow_methods=["*"],  
-    allow_headers=["*"],  
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 def create_server_connection(host_name, user_name, user_password, db_name):
