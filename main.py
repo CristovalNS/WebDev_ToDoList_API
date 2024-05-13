@@ -8,7 +8,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://13.236.191.132"], 
+    allow_origins=["https://web-dev-to-do-list-database-practice.vercel.app"], 
     allow_credentials=True,
     allow_methods=["*"],  
     allow_headers=["*"],  
