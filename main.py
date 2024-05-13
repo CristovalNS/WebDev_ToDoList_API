@@ -11,7 +11,7 @@ app.add_middleware(
     allow_origins=["http://localhost:5173", 
                    "https://web-dev-to-do-list-database-practice.vercel.app",
                    "http://175.158.46.205:1025/"], 
-    allow_credentials=False,
+    allow_credentials=True,
     allow_methods=["*"],  
     allow_headers=["*"],  
 )
